@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan - Content Creator Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SVG Noise Filter Definition -->
+    <svg class="noise-svg">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+        </filter>
+    </svg>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero" id="hero">
+        <div class="noise-overlay"></div>
+        <div class="glow-orb"></div>
+        <div class="hero-content">
+            <p class="subtitle">Content Creation</p>
+            <h1 class="title">Portfolio</h1>
+            <p class="signature">Karan</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section class="about" id="about">
+        <div class="paper-overlay"></div>
+        <div class="about-container">
+            <div class="about-text">
+                <div class="hello-wrapper">
+                    <h2 class="hello">Hello!</h2>
+                    <span class="signature-note">About me <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="arrow"><path d="M12 4V20M12 20L6 14M12 20L18 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+                <p class="i-am">I am Karan.</p>
+                
+                <h3 class="greetings">Greetings ladies & gentlemen.</h3>
+                <p class="bio">
+                    I'm a creative and motivated content creator with a strong passion for visual storytelling and digital strategy. I thrive on exploring new challenges and opportunities that push the boundaries of my creativity and am known for my creative flair and the ability to deliver impactful content. I'm always exploring new trends and techniques to sharpen my creative thinking and skills.
+                </p>
+            </div>
+            <div class="about-image">
+                <!-- Placeholder for sketch/portrait -->
+                <div class="portrait-placeholder">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop" alt="Karan Portrait" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TABLE OF CONTENTS (EXPERTISE) -->
+    <section class="toc" id="expertise">
+        <div class="paper-overlay"></div>
+        <div class="toc-container">
+            <h2 class="toc-title"><span class="script-accent">Table Of</span><br>Contents</h2>
+            
+            <div class="grid-container">
+                <div class="grid-item">
+                    <span class="bg-number">01</span>
+                    <h4 class="item-title">Video<span class="script-overlay">Editing</span></h4>
+                </div>
+                <div class="grid-item">
+                    <span class="bg-number">02</span>
+                    <h4 class="item-title">Content<span class="script-overlay">Strategy</span></h4>
+                </div>
+                <div class="grid-item">
+                    <span class="bg-number">03</span>
+                    <h4 class="item-title">YouTube<span class="script-overlay">Growth</span></h4>
+                </div>
+                <div class="grid-item">
+                    <span class="bg-number">04</span>
+                    <h4 class="item-title">Short-form<span class="script-overlay">Reels</span></h4>
+                </div>
+                <div class="grid-item">
+                    <span class="bg-number">05</span>
+                    <h4 class="item-title">Brand<span class="script-overlay">Design</span></h4>
+                </div>
+                <div class="grid-item">
+                    <span class="bg-number">06</span>
+                    <h4 class="item-title">UI UX<span class="script-overlay">Design</span></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
