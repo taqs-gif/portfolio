@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Variables CSS — Design Tokens
+   Central source of truth for all design decisions
+   ========================================================================== */
+
+:root {
+  /* -----------------------------------------------------------------------
+     Colors — Dark Premium Theme
+     ----------------------------------------------------------------------- */
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #111111;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --bg-glass: rgba(255, 255, 255, 0.05);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(79, 140, 255, 0.3);
+
+  --accent: #4F8CFF;
+  --accent-glow: rgba(79, 140, 255, 0.15);
+  --accent-light: #6DA3FF;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+  --white: #ffffff;
+
+  --gradient-blue: linear-gradient(135deg, #4F8CFF 0%, #3B6FD4 100%);
+  --gradient-dark: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+  /* -----------------------------------------------------------------------
+     Typography
+     ----------------------------------------------------------------------- */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-hero: clamp(3rem, 6vw, 5rem);
+
+  /* -----------------------------------------------------------------------
+     Spacing
+     ----------------------------------------------------------------------- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+  --section-padding: clamp(80px, 10vw, 140px);
+
+  /* -----------------------------------------------------------------------
+     Layout
+     ----------------------------------------------------------------------- */
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+
+  /* -----------------------------------------------------------------------
+     Borders
+     ----------------------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* -----------------------------------------------------------------------
+     Shadows
+     ----------------------------------------------------------------------- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(79, 140, 255, 0.15);
+  --shadow-glow-strong: 0 0 60px rgba(79, 140, 255, 0.25);
+
+  /* -----------------------------------------------------------------------
+     Transitions
+     ----------------------------------------------------------------------- */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+  --transition-spring: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

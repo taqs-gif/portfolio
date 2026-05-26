@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Responsive CSS — Media Queries
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------
+   Tablet & Small Desktop (≤ 1024px)
+   ------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Mobile (≤ 768px)
+   ------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  /* Navigation */
+  .hamburger {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(5, 5, 5, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  /* Hero */
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Grids → single column */
+  .services-grid,
+  .cases-grid,
+  .why-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Small Mobile (≤ 480px)
+   ------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+}

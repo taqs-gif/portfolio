@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Base CSS — Typography & Foundational Styles
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------
+   Body
+   ------------------------------------------------------------------------- */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------------------------------
+   Selection
+   ------------------------------------------------------------------------- */
+::selection {
+  background: rgba(79, 140, 255, 0.3);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: rgba(79, 140, 255, 0.3);
+  color: var(--white);
+}
+
+/* -------------------------------------------------------------------------
+   Headings
+   ------------------------------------------------------------------------- */
+h1 {
+  font-size: var(--font-size-hero);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* -------------------------------------------------------------------------
+   Paragraph
+   ------------------------------------------------------------------------- */
+p {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* -------------------------------------------------------------------------
+   Section Layout
+   ------------------------------------------------------------------------- */
+.section {
+  padding: var(--section-padding) 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* -------------------------------------------------------------------------
+   Section Header Utilities
+   ------------------------------------------------------------------------- */
+.section-label {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.section-title {
+  margin-bottom: var(--space-lg);
+}
+
+.section-subtitle {
+  max-width: 600px;
+  color: var(--text-secondary);
+}
